@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo-elements</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 20px;
+      }
+      p.about::first-line {
+        color: green;
+      }
+      p::first-letter {
+        font-size: 48px;
+      }
+      /* yazı sol tık ile seçildiğinde geçerli demek */
+      ::selection {
+        background-color: hotpink;
+      }
+      /* emoji gibi bir şey atmak için hexadecimal karşılığını kullanmak lazım */
+      p::after {
+        content: "\261D";
+        color: red;
+        font-size: 35px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- pseudo-elements -->
+    <!-- pseudo elements reference diye aratılabilir. -->
+    <!-- html unicode characters araması ile karakterlere ulaşabilirsin -->
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+      nihil iure, error in quo sit deleniti adipisci beatae tenetur est quaerat
+      debitis obcaecati iusto sequi, blanditiis earum temporibus eaque.
+      Similique.
+    </p>
+
+    <p class="about">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cupiditate
+      repellendus, adipisci dolorem voluptatem tempora nemo minima veniam
+      asperiores saepe hic possimus impedit architecto natus temporibus,
+      delectus dolorum quae odio!
+    </p>
+  </body>
+</html>

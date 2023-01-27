@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styling list</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      #showcase {
+        background-color: #2e4c6d;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      #how-it-works {
+        background-color: #fc997c;
+        padding: 10px;
+      }
+      #how-it-works h2 {
+        color: blue;
+      }
+      .main-header {
+        background-color: #fc997c;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 80px);
+        text-align: right;
+      }
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+      }
+      /* liste şeklinde yaptığımızda taryıcının genişliği küçülürken listeye dönüştürüyor. */
+    </style>
+  </head>
+  <header class="main-header">
+    <a href="#">Movieapp</a>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="#">Home</a></li>
+        <li class="main-nav__item"><a href="#">Movies</a></li>
+        <li class="main-nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <section id="showcase">
+        <h1 style="text-align: center; height: 50%">Welcome to Movieapp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

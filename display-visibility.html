@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display-visibility</title>
+    <style>
+      .box {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        padding-top: 10px;
+      }
+      #first {
+        background-color: red;
+      }
+      #second {
+        background-color: blue;
+        /* display: none; nesneyi yok eder yer kaplamaz */
+        visibility: hidden;
+        /* visibilty hidden nesne görünmez olur ama sayfada yer kaplamaya devam eder */
+      }
+      #third {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box" id="first">first</div>
+      <div class="box" id="second">second</div>
+      <div class="box" id="third">third</div>
+    </div>
+  </body>
+</html>

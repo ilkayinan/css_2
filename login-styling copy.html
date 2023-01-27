@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styling login</title>
+    <style>
+      a:hover {
+        color: green;
+        background-color: crimson;
+      }
+      .main-nav__item--login a:hover {
+        color:#2e4c6d ;
+        background-color: #fff;
+        border: 2px solid #2e4c6d;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      .main-nav__item::before {
+        font-size: 36px;
+      }
+      .nav-ul {
+        display: inline-block;
+        width: calc(100% - 200px);
+        text-align: right;
+        text-decoration: none;
+        list-style: none;
+      }
+      .header {
+        background-color: coral;
+        margin: 0px;
+        padding: 0;
+        border: 0;
+      }
+      .main-nav__item {
+        display: inline-block;
+      }
+
+      #baslik {
+        background-color: #2e4c6d;
+      }
+      #footer {
+        background-color: coral;
+      }
+      .body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      #baslik__1 {
+        padding: 40px 30px;
+      }
+      .main-nav__item--login a {
+        color: #fff;
+        background-color: #2e4c6d;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid #fff;
+    </style>
+  </head>
+  <body>
+    <header class="header" style="height: 40px">
+      <a
+        href="padding.html"
+        style="
+          text-decoration: none;
+          font-size: 25px;
+          padding-left: 10px;
+          padding-bottom: 10px;
+          padding-top: 5px;
+        "
+        >MovieApp</a
+      >
+      <nav class="nav-ul">
+        <ul>
+          <li class="main-nav__item">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Filmler</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Diziler</a
+            >
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="padding.html" style="text-decoration: none; color: #fff"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="baslik" style="height: 500px">
+      <h1 id="baslik__1">Welcome to MovieApp</h1>
+    </section>
+    <footer>
+      <section id="footer">
+        <br />
+
+        <br />
+      </section>
+    </footer>
+  </body>
+</html>
